@@ -193,12 +193,12 @@ class MailgunAdapter extends MailAdapter {
   sendPasswordResetEmail({ link, appName, user }) {
     let locale = user.get('locale');
     if (locale && locale.startsWith('de')) {
-        return this._sendMail({
-            templateName: 'passwordResetEmailDE',
-            link,
-            appName,
-            user
-        });
+      return this._sendMail({
+        templateName: 'passwordResetEmailDE',
+        link:link+"&lang=de",
+        appName,
+        user
+      });
     } else {
       return this._sendMail({
         templateName: 'passwordResetEmail',
@@ -218,19 +218,19 @@ class MailgunAdapter extends MailAdapter {
   sendVerificationEmail({ link, appName, user }) {
     let locale = user.get('locale');
     if (locale && locale.startsWith('de')) {
-        return this._sendMail({
-            templateName: 'verificationEmailDE',
-            link,
-            appName,
-            user
-        });
+      return this._sendMail({
+        templateName: 'verificationEmailDE',
+        link:link+"&lang=de",
+        appName,
+        user
+      });
     } else {
-        return this._sendMail({
-            templateName: 'verificationEmail',
-            link,
-            appName,
-            user
-        });
+      return this._sendMail({
+        templateName: 'verificationEmail',
+        link,
+        appName,
+        user
+      });
     }
   }
 
