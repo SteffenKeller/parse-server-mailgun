@@ -36,17 +36,17 @@
     "co": "^4.6.0",
     "mailcomposer": "^4.0.2",
     "mailgun-js": "^0.22.0",
-    "mustache": "^3.0.0"
+    "mustache": "^3.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015-node": "^6.1.1",
     "chai": "^4.2.0",
-    "codecov": "^3.1.0",
-    "eslint": "^5.8.0",
-    "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
-    "sinon": "^7.1.0"
+    "codecov": "^3.8.1",
+    "eslint": "^5.16.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^7.5.0"
   },
   "engines": {
     "node": ">=4.6"
